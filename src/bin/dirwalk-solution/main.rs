@@ -1,6 +1,3 @@
-// Adapt this function to return a vector of strings for which the bool is true,
-// rather than return a Vec<bool> directly.
-
 use std::fs;
 use std::io;
 
@@ -22,4 +19,5 @@ fn get_block_devices() -> Result<Vec<String>, io::Error> {
 }
 
 fn main() {
+    println!("{:#?}", get_block_devices());
 }
